@@ -3,17 +3,17 @@ import { Section } from "./Section";
 
 const items = [
   {
-    period: "2018 — 2022",
-    degree: "B.Sc. in Computer Science & Engineering",
-    school: "University Name",
-    desc: "Focused on software engineering, algorithms, and human-computer interaction. Graduated with distinction.",
+    period: "2014 — 2018",
+    degree: "Diploma In Electronics Engineering",
+    school: "Bangladesh Institute Of Information Technology",
+    desc: "Studied core electronics, circuit design, and foundational programming. This experience of bridging hardware logic with code developed my strong analytical mindset for building digital products.",
   },
-  {
-    period: "2016 — 2018",
-    degree: "Higher Secondary Certificate",
-    school: "College Name",
-    desc: "Science group, concentration in mathematics and physics. Top of class.",
-  },
+  // {
+  //   period: "2016 — 2018",
+  //   degree: "Higher Secondary Certificate",
+  //   school: "College Name",
+  //   desc: "Science group, concentration in mathematics and physics. Top of class.",
+  // },
 ];
 
 export function Education() {

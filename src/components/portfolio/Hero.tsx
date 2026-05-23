@@ -1,5 +1,5 @@
 import { motion, type Variants } from "framer-motion";
-import portrait from "@/assets/hero-portrait.jpg";
+import Portrait from "@/assets/hero-portrait.png";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -56,8 +56,7 @@ export function Hero() {
           >
             S.M. Amirul
             <br />
-            Islam{" "}
-            <span className="text-gradient-aurora  pr-3 italic font-light">Saad</span>
+            Islam <span className="text-gradient-aurora  pr-3 italic font-light">Saad</span>
           </motion.h1>
 
           <motion.p
@@ -68,8 +67,8 @@ export function Hero() {
             className="mt-7 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
           >
             Software engineer engineering{" "}
-            <span className="text-foreground">tomorrow's interfaces</span> — where
-            motion, code, and craft converge into experiences that feel inevitable.
+            <span className="text-foreground">tomorrow's interfaces</span> — where motion, code, and
+            craft converge into experiences that feel inevitable.
           </motion.p>
 
           <motion.div
@@ -81,16 +80,32 @@ export function Hero() {
           >
             <a
               href="#projects"
-              onClick={(e) => { e.preventDefault(); document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" }); }}
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="group relative inline-flex items-center gap-2 rounded-full bg-aurora text-primary-foreground px-6 py-3 text-sm font-medium"
             >
               <span className="absolute inset-0 rounded-full bg-aurora blur-lg opacity-50 group-hover:opacity-80 transition-opacity -z-10" />
               Explore Work
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="group-hover:translate-x-0.5 transition-transform"
+              >
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
             </a>
             <a
               href="#contact"
-              onClick={(e) => { e.preventDefault(); document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" }); }}
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur-md px-6 py-3 text-sm font-medium hover:border-foreground/30 transition-colors"
             >
               Get in touch
@@ -111,7 +126,9 @@ export function Hero() {
             ].map((s) => (
               <div key={s.v} className="border-l border-border pl-4">
                 <div className="text-2xl font-semibold text-gradient-aurora">{s.k}</div>
-                <div className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground mt-1">{s.v}</div>
+                <div className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground mt-1">
+                  {s.v}
+                </div>
               </div>
             ))}
           </motion.div>
@@ -130,7 +147,7 @@ export function Hero() {
             <div className="absolute -inset-2 rounded-[1.8rem] bg-gradient-to-br from-[var(--neon-cyan)] via-[var(--neon-violet)] to-[var(--neon-magenta)] opacity-70" />
             <div className="relative h-full w-full rounded-[1.6rem] overflow-hidden bg-card">
               <img
-                src={portrait}
+                src={Portrait}
                 alt="Portrait of S. M. Amirul Islam Saad"
                 width={1024}
                 height={1280}
@@ -172,7 +189,9 @@ export function Hero() {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -bottom-6 -left-6 rounded-2xl border border-border bg-card/80 backdrop-blur-xl p-4 shadow-2xl"
             >
-              <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">Now Building</div>
+              <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
+                Now Building
+              </div>
               <div className="mt-1 text-sm font-medium">Neural UI Systems</div>
             </motion.div>
             <motion.div

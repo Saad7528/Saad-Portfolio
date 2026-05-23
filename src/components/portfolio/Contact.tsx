@@ -15,7 +15,7 @@ export function Contact() {
   const [error, setError] = useState<string | null>(null);
 
   const onSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); 
     setError(null);
     const result = schema.safeParse(form);
     if (!result.success) {
