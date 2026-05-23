@@ -5,17 +5,17 @@ const groups = [
   {
     title: "Frontend",
     icon: "◉",
-    items: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion", "GSAP", "Three.js"],
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "DaisyUI", "HeroUI", "Recharts"],
   },
   {
     title: "Backend",
     icon: "◈",
-    items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST", "GraphQL", "Redis"],
+    items: ["Node.js", "Express", "PostgreSQL", "MongoDB","REST APIs"],
   },
   {
     title: "Craft & Cloud",
     icon: "◇",
-    items: ["Figma", "Git", "Vercel", "AWS", "Docker", "CI/CD", "Testing"],
+    items: ["Figma", "Git", "Vercel", "Postman", "Netlify", "Testing"],
   },
 ];
 

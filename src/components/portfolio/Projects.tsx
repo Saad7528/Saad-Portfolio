@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { Section } from "./Section";
-import p1 from "@/assets/project-1.jpg";
+import p1 from "@/assets/project-1.png";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
 
 const projects = [
-  { title: "Lumen Neural", tag: "AI Platform", year: "2026", desc: "Real-time neural network visualization platform.", img: p1 },
+  { title: "Qurbanir Hat", tag: "Livesstck Marketplace", year: "2026", desc: "Real-time neural network visualization platform.", img: p1 },
   { title: "Atlas Console", tag: "SaaS Dashboard", year: "2025", desc: "Sub-100ms analytics console for ops teams.", img: p2 },
   { title: "Pulse Mobile", tag: "Mobile App", year: "2025", desc: "Mindful health tracker with tactile motion.", img: p3 },
   { title: "Nova Commerce", tag: "E-commerce", year: "2024", desc: "Headless storefront with spatial product views.", img: p4 },
