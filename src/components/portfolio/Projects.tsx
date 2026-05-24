@@ -6,7 +6,7 @@ import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
 
 const projects = [
-  { title: "Qurbanir Hat", tag: "Livestock Marketplace", year: "2026", desc: "A modern web application for browsing and reserving Qurbani livestock.", img: p1, href: "https://qurbanir-hat-saad.vercel.app" },
+  { title: "Qurbanir Hat", tag: "Livestock Marketplace", year: "2026", desc: "A modern web application for browsing and reserving Qurbani livestock—cattle, goats, and related animals marketed for Eid al-Adha.", img: p1, href: "https://qurbanir-hat-saad.vercel.app" },
   { title: "SportNest", tag: "Booking Sports Facilities", year: "2026", desc: "A premium, next-generation sports venue booking and management platform designed to connect sports enthusiasts with premium venue owners.", img: p2, href: "https://sportnest-client-one.vercel.app" },
   { title: "Dragon News", tag: "News Portal", year: "2026", desc: "The Dragon News is a modern, full-stack news portal web application. Built with modern technologies, this project provides a seamless platform for readers to explore news and for administrators to manage content efficiently.", img: p3, href: "https://dragon-news-next-saad.vercel.app" },
   // { title: "Nova Commerce", tag: "E-commerce", year: "2024", desc: "Headless storefront with spatial product views.", img: p4 },
@@ -52,13 +52,38 @@ export function Projects() {
               </div>
               <div className="absolute top-5 right-5 w-9 h-9 rounded-full border border-border bg-background/60 backdrop-blur-md flex items-center justify-center group-hover:bg-aurora group-hover:border-transparent transition-all">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="-rotate-45 group-hover:rotate-0 transition-transform">
-                  <path d="M5 12h14M13 5l7 7-7 7"/>
+                  <path d="M5 12h14M13 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
             <div className="p-6">
               <h3 className="text-xl md:text-2xl font-semibold tracking-tight">{p.title}</h3>
               <p className="mt-2 text-muted-foreground leading-relaxed">{p.desc}</p>
+
+            </div>
+            <div className="flex justify-end mt-4 mb-4">
+              <a
+              href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="group relative inline-flex items-center gap-2 rounded-full bg-aurora text-primary-foreground px-6 py-3 text-sm font-medium"
+            >
+              <span className="absolute inset-0 rounded-full bg-aurora blur-lg opacity-50 group-hover:opacity-80 transition-opacity -z-10" />
+              Dtails
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="group-hover:translate-x-0.5 transition-transform"
+              >
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
             </div>
           </motion.a>
         ))}
