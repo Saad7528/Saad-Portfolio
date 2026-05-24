@@ -5,7 +5,7 @@ const groups = [
   {
     title: "Frontend",
     icon: "◉",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "DaisyUI", "HeroUI", "Recharts"],
+    items: ["React", "Next.js", "Tailwind CSS", "DaisyUI", "HeroUI", "Recharts"],
   },
   {
     title: "Backend",

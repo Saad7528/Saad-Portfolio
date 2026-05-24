@@ -1,5 +1,5 @@
 import { motion, type Variants } from "framer-motion";
-import Portrait from "@/assets/hero-portrait.png";
+import Portrait from "@/assets/hero-portrait.jpg";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
