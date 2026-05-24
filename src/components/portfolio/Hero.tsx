@@ -87,7 +87,7 @@ export function Hero() {
               className="group relative inline-flex items-center gap-2 rounded-full bg-aurora text-primary-foreground px-6 py-3 text-sm font-medium"
             >
               <span className="absolute inset-0 rounded-full bg-aurora blur-lg opacity-50 group-hover:opacity-80 transition-opacity -z-10" />
-              Explore Work
+              Resume Banate hobe
               <svg
                 width="14"
                 height="14"
@@ -119,18 +119,18 @@ export function Hero() {
             variants={fadeUp}
             className="mt-14 grid grid-cols-3 gap-6 max-w-md"
           >
-            {[
-              { k: "05+", v: "Years" },
-              { k: "30+", v: "Projects" },
-              { k: "12+", v: "Clients" },
-            ].map((s) => (
-              <div key={s.v} className="border-l border-border pl-4">
-                <div className="text-2xl font-semibold text-gradient-aurora">{s.k}</div>
-                <div className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground mt-1">
-                  {s.v}
+              {/* {[
+                { k: "05+", v: "Years" },
+                { k: "30+", v: "Projects" },
+                { k: "12+", v: "Clients" },
+              ].map((s) => (
+                <div key={s.v} className="border-l border-border pl-4">
+                  <div className="text-2xl font-semibold text-gradient-aurora">{s.k}</div>
+                  <div className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground mt-1">
+                    {s.v}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))} */}
           </motion.div>
         </div>
 

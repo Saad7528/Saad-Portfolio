@@ -45,18 +45,38 @@ export function Contact() {
         >
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Email</div>
-            <a href="mailto:hello@amirulsaad.dev" className="text-lg hover:text-gradient-aurora">hello@amirulsaad.dev</a>
+            <a href="mailto:hello@amirulsaad.dev" className="text-lg hover:text-gradient-aurora">Saad0174742@gmail.com</a>
           </div>
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Location</div>
-            <div className="text-lg">Dhaka, Bangladesh · 23.7°N 90.4°E</div>
+            <div className="text-lg">Thakurgaon, Bangladesh</div>
           </div>
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-3">Elsewhere</div>
             <div className="flex flex-wrap gap-4">
-              {["GitHub", "LinkedIn", "Twitter", "Dribbble"].map((s) => (
-                <a key={s} href="#" onClick={(e) => e.preventDefault()} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  {s} ↗
+              {/* "GitHub", "LinkedIn", "Twitter", "Dribbble" */}
+              {[{
+                id:1,
+                name: "Github",
+                link: "https://github.com/Saad7528"
+              },
+            {
+                id:2,
+                name: "LinkedIn",
+                link: "https://www.linkedin.com/in/s-m-amirul-islam-saad"
+              },
+            {
+                id:3,
+                name: "Twitter",
+                link: "https://git.com/saad"
+              },
+            {
+                id:4,
+                name: "Facebook",
+                link: "https://www.facebook.com/s.m.amirulislam.saad"
+              }].map((s) => (
+                <a key={s.id} href={s.link} onClick={(e) => e.preventDefault()} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  {s.name} ↗
                 </a>
               ))}
             </div>

@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { Section } from "./Section";
 import p1 from "@/assets/project-1.png";
-import p2 from "@/assets/project-2.jpg";
+import p2 from "@/assets/project-2.png";
 import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
 
 const projects = [
-  { title: "Qurbanir Hat", tag: "Livesstck Marketplace", year: "2026", desc: "Real-time neural network visualization platform.", img: p1 },
-  { title: "Atlas Console", tag: "SaaS Dashboard", year: "2025", desc: "Sub-100ms analytics console for ops teams.", img: p2 },
-  { title: "Pulse Mobile", tag: "Mobile App", year: "2025", desc: "Mindful health tracker with tactile motion.", img: p3 },
-  { title: "Nova Commerce", tag: "E-commerce", year: "2024", desc: "Headless storefront with spatial product views.", img: p4 },
+  { title: "Qurbanir Hat", tag: "Livestock Marketplace", year: "2026", desc: "A modern web application for browsing and reserving Qurbani livestock.", img: p1, href: "https://qurbanir-hat-saad.vercel.app" },
+  { title: "SportNest", tag: "Booking Sports Facilities", year: "2026", desc: "A premium, next-generation sports venue booking and management platform designed to connect sports enthusiasts with premium venue owners.", img: p2, href: "https://sportnest-client-one.vercel.app" },
+  // { title: "Pulse Mobile", tag: "Mobile App", year: "2025", desc: "Mindful health tracker with tactile motion.", img: p3 },
+  // { title: "Nova Commerce", tag: "E-commerce", year: "2024", desc: "Headless storefront with spatial product views.", img: p4 },
 ];
 
 export function Projects() {
@@ -24,7 +24,7 @@ export function Projects() {
         {projects.map((p, i) => (
           <motion.a
             key={p.title}
-            href="#"
+            href={p.href}
             onClick={(e) => e.preventDefault()}
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export function Projects() {
             transition={{ duration: 0.7, delay: i * 0.08 }}
             className="group relative block rounded-3xl overflow-hidden border border-border bg-card/40 backdrop-blur-md"
           >
-            <div className="relative aspect-[16/10] overflow-hidden">
+            <div className="relative aspect-[16/10] overflow-hidden" onClick={() => window.open(p.href, '_blank')}>
               <img
                 src={p.img}
                 alt={p.title}
