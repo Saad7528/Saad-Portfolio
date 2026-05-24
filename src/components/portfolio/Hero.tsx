@@ -66,7 +66,7 @@ export function Hero() {
             variants={fadeUp}
             className="mt-7 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
           >
-            Software engineer engineering{" "}
+            Developer{" "}
             <span className="text-foreground">tomorrow's interfaces</span> — where motion, code, and
             craft converge into experiences that feel inevitable.
           </motion.p>
@@ -119,7 +119,7 @@ export function Hero() {
             variants={fadeUp}
             className="mt-14 grid grid-cols-3 gap-6 max-w-md"
           >
-              {/* {[
+            {/* {[
                 { k: "05+", v: "Years" },
                 { k: "30+", v: "Projects" },
                 { k: "12+", v: "Clients" },
@@ -156,54 +156,7 @@ export function Hero() {
               {/* Gradient overlays */}
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-r from-[var(--neon-cyan)]/10 via-transparent to-[var(--neon-magenta)]/10 mix-blend-overlay" />
-
-              {/* HUD overlays */}
-              <div className="absolute top-4 left-4 right-4 flex justify-between text-[10px] font-mono text-[var(--neon-cyan)] uppercase tracking-widest">
-                <span>ID · 0021</span>
-                <span>SYS · ONLINE</span>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end text-[10px] font-mono text-foreground/80">
-                <div>
-                  <div className="text-[var(--neon-magenta)]">SAAD.exe</div>
-                  <div className="text-muted-foreground mt-1">v.2026.1</div>
-                </div>
-                <div className="text-right">
-                  <div className="text-[var(--neon-cyan)]">23.7°N</div>
-                  <div className="text-muted-foreground mt-1">90.4°E</div>
-                </div>
-              </div>
-              {/* Corner brackets */}
-              {[
-                "top-2 left-2 border-t border-l",
-                "top-2 right-2 border-t border-r",
-                "bottom-2 left-2 border-b border-l",
-                "bottom-2 right-2 border-b border-r",
-              ].map((c) => (
-                <div key={c} className={`absolute w-6 h-6 border-[var(--neon-cyan)] ${c}`} />
-              ))}
             </div>
-
-            {/* Floating chip */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 rounded-2xl border border-border bg-card/80 backdrop-blur-xl p-4 shadow-2xl"
-            >
-              <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
-                Now Building
-              </div>
-              <div className="mt-1 text-sm font-medium">Neural UI Systems</div>
-            </motion.div>
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 rounded-2xl border border-border bg-card/80 backdrop-blur-xl px-4 py-3 shadow-2xl"
-            >
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-[var(--neon-cyan)] glow-cyan" />
-                <span className="text-xs font-mono">99.9% uptime</span>
-              </div>
-            </motion.div>
           </div>
         </motion.div>
       </div>
