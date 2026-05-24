@@ -8,7 +8,7 @@ import p4 from "@/assets/project-4.jpg";
 const projects = [
   { title: "Qurbanir Hat", tag: "Livestock Marketplace", year: "2026", desc: "A modern web application for browsing and reserving Qurbani livestock.", img: p1, href: "https://qurbanir-hat-saad.vercel.app" },
   { title: "SportNest", tag: "Booking Sports Facilities", year: "2026", desc: "A premium, next-generation sports venue booking and management platform designed to connect sports enthusiasts with premium venue owners.", img: p2, href: "https://sportnest-client-one.vercel.app" },
-  // { title: "Pulse Mobile", tag: "Mobile App", year: "2025", desc: "Mindful health tracker with tactile motion.", img: p3 },
+  { title: "Dragon News", tag: "News Portal", year: "2026", desc: "News Portal.", img: p3, href: "https://dragon-news-next-saad.vercel.app" },
   // { title: "Nova Commerce", tag: "E-commerce", year: "2024", desc: "Headless storefront with spatial product views.", img: p4 },
 ];
 

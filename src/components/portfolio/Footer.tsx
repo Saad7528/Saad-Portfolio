@@ -10,7 +10,7 @@ export function Footer() {
           </div>
         </div>
         <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-muted-foreground">
-          Designed & built from <span className="text-foreground">Dhaka</span> ↗
+          Designed & built from <span className="text-foreground">Thakurgaon</span> ↗
         </div>
       </div>
     </footer>

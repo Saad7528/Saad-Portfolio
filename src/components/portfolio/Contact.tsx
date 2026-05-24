@@ -48,6 +48,10 @@ export function Contact() {
             <a href="mailto:hello@amirulsaad.dev" className="text-lg hover:text-gradient-aurora">Saad0174742@gmail.com</a>
           </div>
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
+            <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Phone</div>
+            <a href="" className="text-lg hover:text-gradient-aurora">+8801851192657</a>
+          </div>
+          <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Location</div>
             <div className="text-lg">Thakurgaon, Bangladesh</div>
           </div>
