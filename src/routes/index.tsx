@@ -30,7 +30,7 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <Experience />
+        {/* <Experience /> */}
         <Education />
         <Skills />
         <Projects />

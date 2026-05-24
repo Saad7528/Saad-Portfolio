@@ -20,7 +20,7 @@ export function Education() {
   return (
     <Section
       id="education"
-      eyebrow="03 — Education"
+      eyebrow="02 — Education"
       title={<>Foundations & <span className="text-gradient-aurora italic pr-2.5 font-light">study</span>.</>}
     >
       <div className="grid md:grid-cols-2 gap-5">

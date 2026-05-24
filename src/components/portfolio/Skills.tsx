@@ -23,7 +23,7 @@ export function Skills() {
   return (
     <Section
       id="skills"
-      eyebrow="04 — Skills"
+      eyebrow="03 — Skills"
       title={<>Stack of <span className="text-gradient-aurora italic pr-2 font-light">choice</span>.</>}
       description="The tools I reach for to build fast, scalable, beautiful products."
     >

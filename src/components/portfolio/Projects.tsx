@@ -16,7 +16,7 @@ export function Projects() {
   return (
     <Section
       id="projects"
-      eyebrow="05 — Selected Work"
+      eyebrow="04 — Selected Work"
       title={<>Projects & <span className="text-gradient-aurora italic pr-2 font-light">case studies</span>.</>}
       description="A few pieces I'm proud of — each a study in craft, motion and detail."
     >

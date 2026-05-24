@@ -31,7 +31,7 @@ export function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="06 — Contact"
+      eyebrow="05 — Contact"
       title={<>Let's build the <span className="text-gradient-aurora italic pr-2 font-light">future</span>.</>}
       description="Have a project in mind, or just want to say hi? Drop a transmission."
     >

@@ -36,13 +36,18 @@ export function About() {
             make digital products feel alive. My work sits where engineering meets
             craft: clean architecture, tactile motion, and interfaces that respond
             like they understand you. */}
-            I'm Amirul — a passionate Full-Stack Web Developer obsessed with building digital products that are both functional and user-friendly. My work focuses on writing clean code and creating interfaces that provide a seamless experience across all devices.
+            {/* I'm Amirul — a passionate Full-Stack Web Developer obsessed with building digital products that are both functional and user-friendly. My work focuses on writing clean code and creating interfaces that provide a seamless experience across all devices. */}
+            My tech journey started in Electronics Engineering. While building custom circuits and programming microcontrollers, I realized my true passion was in coding. This inspired me to dive into software and complete an intensive Full-Stack Web Development course at Programming Hero. Today, I apply that same analytical mindset to build fast and modern web applications.
           </p>
           <p>
             {/* Over the past several years I've shipped products across web, mobile,
             and AI-powered systems. From sub-100ms dashboards to spatial 3D UIs,
             I build for the future without losing sight of the people using it today. */}
-            Through intensive training and continuous learning, I have focused heavily on modern web technologies. From building analytics tools like 'Keen Keeper' to developing a full-fledged livestock marketplace, I enjoy turning complex problems into simple, elegant web solutions. I am eager to learn, build for the future, and grow within a dynamic team.
+            {/* Through intensive training and continuous learning, I have focused heavily on modern web technologies. From building analytics tools like 'Keen Keeper' to developing a full-fledged livestock marketplace, I enjoy turning complex problems into simple, elegant web solutions. I am eager to learn, build for the future, and grow within a dynamic team. */}
+            I specialize in React, Next.js, and Tailwind CSS. From full-stack marketplaces to interactive dashboards, I love turning complex problems into clean, scalable, and user-friendly digital experiences.
+          </p>
+          <p>
+            Outside of web development, I run SaadTech ETC, a YouTube channel dedicated to DIY electronics. I also enjoy riding my motorcycle, tending to my home garden,To hang out with friends and spending quality time with my family.
           </p>
         </motion.div>
 
