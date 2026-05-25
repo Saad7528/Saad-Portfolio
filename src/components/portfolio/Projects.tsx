@@ -61,7 +61,7 @@ export function Projects() {
               <p className="mt-2 text-muted-foreground leading-relaxed">{p.desc}</p>
 
             </div>
-            <div className="flex justify-end mt-4 mb-4">
+            <div className="flex justify-end mt-4 mb-4 mr-4">
               <a
               href="#projects"
               onClick={(e) => {

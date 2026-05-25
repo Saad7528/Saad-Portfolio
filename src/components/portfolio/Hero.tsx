@@ -79,7 +79,7 @@ export function Hero() {
             className="mt-10 flex flex-wrap items-center gap-3"
           >
             <a
-              href="#projects"
+              href="https://drive.google.com/file/d/1NYKfIs4s6tNlheJujQN5joZDdnUoKpI8/view?usp=sharing"
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
