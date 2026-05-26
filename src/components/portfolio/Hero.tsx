@@ -80,14 +80,11 @@ export function Hero() {
           >
             <a
               href="https://drive.google.com/file/d/1NYKfIs4s6tNlheJujQN5joZDdnUoKpI8/view?usp=sharing"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
-              }}
+              download
               className="group relative inline-flex items-center gap-2 rounded-full bg-aurora text-primary-foreground px-6 py-3 text-sm font-medium"
             >
               <span className="absolute inset-0 rounded-full bg-aurora blur-lg opacity-50 group-hover:opacity-80 transition-opacity -z-10" />
-              Resume Banate hobe
+              Resume
               <svg
                 width="14"
                 height="14"
@@ -95,9 +92,13 @@ export function Hero() {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className="group-hover:translate-x-0.5 transition-transform"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="group-hover:translate-y-0.5 transition-transform"
               >
-                <path d="M5 12h14M13 5l7 7-7 7" />
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
             </a>
             <a
