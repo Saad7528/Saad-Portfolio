@@ -45,41 +45,35 @@ export function Contact() {
         >
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Email</div>
-            <a href="mailto:hello@amirulsaad.dev" className="text-lg hover:text-gradient-aurora">Saad0174742@gmail.com</a>
+            <a href="mailto:Saad0174742@gmail.com" className="text-base md:text-lg hover:text-gradient-aurora break-all">
+              Saad0174742@gmail.com
+            </a>
           </div>
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Phone</div>
-            <a href="" className="text-lg hover:text-gradient-aurora">+8801851192657</a>
+            <a href="tel:+8801851192657" className="text-base md:text-lg hover:text-gradient-aurora">
+              +8801851192657
+            </a>
           </div>
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Location</div>
-            <div className="text-lg">Thakurgaon, Bangladesh</div>
+            <div className="text-base md:text-lg">Thakurgaon, Bangladesh</div>
           </div>
           <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-3">Elsewhere</div>
             <div className="flex flex-wrap gap-4">
-              {/* "GitHub", "LinkedIn", "Twitter", "Dribbble" */}
-              {[{
-                id:1,
-                name: "Github",
-                link: "https://github.com/Saad7528"
-              },
-            {
-                id:2,
-                name: "LinkedIn",
-                link: "https://www.linkedin.com/in/s-m-amirul-islam-saad"
-              },
-            {
-                id:3,
-                name: "Twitter",
-                link: "https://git.com/saad"
-              },
-            {
-                id:4,
-                name: "Facebook",
-                link: "https://www.facebook.com/s.m.amirulislam.saad"
-              }].map((s) => (
-                <a key={s.id} href={s.link} onClick={(e) => e.preventDefault()} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              {[
+                { id: 1, name: "Github", link: "https://github.com/Saad7528" },
+                { id: 2, name: "LinkedIn", link: "https://www.linkedin.com/in/s-m-amirul-islam-saad" },
+                { id: 3, name: "Facebook", link: "https://www.facebook.com/s.m.amirulislam.saad" },
+              ].map((s) => (
+                <a
+                  key={s.id}
+                  href={s.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   {s.name} ↗
                 </a>
               ))}

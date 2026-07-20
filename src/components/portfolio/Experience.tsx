@@ -7,32 +7,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 const roles = [
   {
-    period: "2024 — Now",
-    role: "Senior Software Engineer",
-    company: "Independent",
-    desc: "Designing and shipping full-stack products for ambitious startups. Architecture, motion, and product polish.",
-    stack: ["React", "Next.js", "Node", "Cloud"],
+    period: "2024 — Present",
+    role: "Full-Stack Web Developer",
+    company: "Freelance & Projects",
+    desc: "Building scalable web applications, modern responsive UIs, and full-stack platforms with React, Next.js, Tailwind CSS, and Node.js.",
+    stack: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
   },
   {
-    period: "2022 — 2024",
-    role: "Full-Stack Engineer",
-    company: "Tech Studio",
-    desc: "Built scalable platforms and led front-end architecture for a multi-product design system.",
-    stack: ["TypeScript", "GraphQL", "Postgres"],
+    period: "2020 — Present",
+    role: "Founder & Content Creator",
+    company: "SaadTech ETC (YouTube)",
+    desc: "Creating educational content around DIY electronics, microcontrollers, custom hardware, and creative coding for tech enthusiasts.",
+    stack: ["Electronics", "Microcontrollers", "Hardware", "Video Production"],
   },
   {
-    period: "2020 — 2022",
-    role: "Software Engineer",
-    company: "Product Agency",
-    desc: "Delivered client products end-to-end. Collaborated closely with designers on highly interactive UI.",
-    stack: ["React", "Three.js", "Framer Motion"],
-  },
-  {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "Startup",
-    desc: "Started my career writing production code, shipping features used by thousands of users.",
-    stack: ["JavaScript", "Express"],
+    period: "2014 — 2018",
+    role: "Electronics Engineering Student",
+    company: "BIIT",
+    desc: "Completed Diploma in Electronics Engineering, focusing on circuit design, hardware programming, and analytical problem-solving.",
+    stack: ["Electronics", "Circuit Design", "Embedded Logic"],
   },
 ];
 

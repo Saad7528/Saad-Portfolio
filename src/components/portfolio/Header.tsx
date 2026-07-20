@@ -23,7 +23,10 @@ export function Header() {
 
   const go = (e: React.MouseEvent, href: string) => {
     e.preventDefault();
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
     setOpen(false);
   };
 

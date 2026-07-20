@@ -20,15 +20,15 @@ export function Hero() {
     >
       {/* Grid + glow backdrop */}
       <div className="absolute inset-0 grid-bg -z-20" />
-      <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-[10%] left-[10%] w-[520px] h-[520px] rounded-full bg-[var(--neon-cyan)] opacity-20 blur-[140px]" />
-        <div className="absolute bottom-[5%] right-[5%] w-[600px] h-[600px] rounded-full bg-[var(--neon-magenta)] opacity-20 blur-[160px]" />
-        <div className="absolute top-[40%] left-[45%] w-[300px] h-[300px] rounded-full bg-[var(--neon-violet)] opacity-15 blur-[120px]" />
+      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+        <div className="absolute top-[10%] left-[5%] sm:left-[10%] w-[260px] sm:w-[450px] md:w-[520px] h-[260px] sm:h-[450px] md:h-[520px] rounded-full bg-[var(--neon-cyan)] opacity-20 blur-[80px] sm:blur-[140px]" />
+        <div className="absolute bottom-[5%] right-[5%] w-[280px] sm:w-[500px] md:w-[600px] h-[280px] sm:h-[500px] md:h-[600px] rounded-full bg-[var(--neon-magenta)] opacity-20 blur-[90px] sm:blur-[160px]" />
+        <div className="absolute top-[40%] left-[30%] sm:left-[45%] w-[180px] sm:w-[300px] h-[180px] sm:h-[300px] rounded-full bg-[var(--neon-violet)] opacity-15 blur-[70px] sm:blur-[120px]" />
       </div>
       {/* Vignette */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-background" />
 
-      <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-8 md:gap-12 items-center">
         {/* Left: copy */}
         <div className="lg:col-span-7 relative z-10">
           <motion.div
@@ -36,7 +36,7 @@ export function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur-md px-3 py-1.5 mb-8"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur-md px-3 py-1.5 mb-6 md:mb-8"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--neon-cyan)] opacity-60 animate-ping" />
@@ -52,11 +52,11 @@ export function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="text-[clamp(2.6rem,7vw,5.6rem)] font-semibold tracking-tight leading-[0.98]"
+            className="text-[clamp(2.1rem,6vw,5.2rem)] font-semibold tracking-tight leading-[1.02] break-words"
           >
             S.M. Amirul
             <br />
-            Islam <span className="text-gradient-aurora  pr-3 italic font-light">Saad</span>
+            Islam <span className="text-gradient-aurora pr-2 italic font-light">Saad</span>
           </motion.h1>
 
           <motion.p
@@ -64,10 +64,10 @@ export function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="mt-7 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
+            className="mt-6 md:mt-7 text-base md:text-xl text-muted-foreground max-w-xl leading-relaxed"
           >
-            Developer{" "}
-            <span className="text-foreground">tomorrow's interfaces</span> — where motion, code, and
+            Developing{" "}
+            <span className="text-foreground font-medium">tomorrow's interfaces</span> — where motion, code, and
             craft converge into experiences that feel inevitable.
           </motion.p>
 
@@ -76,11 +76,12 @@ export function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="mt-10 flex flex-wrap items-center gap-3"
+            className="mt-8 md:mt-10 flex flex-wrap items-center gap-3"
           >
             <a
               href="https://drive.google.com/file/d/1NYKfIs4s6tNlheJujQN5joZDdnUoKpI8/view?usp=sharing"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-2 rounded-full bg-aurora text-primary-foreground px-6 py-3 text-sm font-medium"
             >
               <span className="absolute inset-0 rounded-full bg-aurora blur-lg opacity-50 group-hover:opacity-80 transition-opacity -z-10" />
@@ -105,7 +106,8 @@ export function Hero() {
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                const target = document.querySelector("#contact");
+                if (target) target.scrollIntoView({ behavior: "smooth" });
               }}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur-md px-6 py-3 text-sm font-medium hover:border-foreground/30 transition-colors"
             >
