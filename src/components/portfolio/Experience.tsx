@@ -1,9 +1,5 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 import { Section } from "./Section";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const roles = [
   {
@@ -30,38 +26,31 @@ const roles = [
 ];
 
 export function Experience() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!ref.current) return;
-    const ctx = gsap.context(() => {
-      gsap.utils.toArray<HTMLElement>(".exp-item").forEach((el) => {
-        gsap.from(el, {
-          opacity: 0, y: 40, duration: 0.9, ease: "power3.out",
-          scrollTrigger: { trigger: el, start: "top 85%" },
-        });
-      });
-      gsap.from(".exp-line", {
-        scaleY: 0, transformOrigin: "top", ease: "none",
-        scrollTrigger: {
-          trigger: ref.current, start: "top 70%", end: "bottom 70%", scrub: true,
-        },
-      });
-    }, ref);
-    return () => ctx.revert();
-  }, []);
-
   return (
     <Section
       id="experience"
       eyebrow="02 — Experience"
-      title={<>Trajectory through <span className="text-gradient-aurora italic pr-2.5  font-light">time</span>.</>}
+      title={<>Trajectory through <span className="text-gradient-aurora italic pr-2.5 font-light">time</span>.</>}
     >
-      <div ref={ref} className="relative pl-10 md:pl-16">
-        <div className="exp-line absolute left-3 md:left-5 top-3 bottom-3 w-px bg-gradient-to-b from-[var(--neon-cyan)] via-[var(--neon-violet)] to-[var(--neon-magenta)]" />
+      <div className="relative pl-10 md:pl-16">
+        <motion.div
+          initial={{ scaleY: 0 }}
+          whileInView={{ scaleY: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          style={{ transformOrigin: "top" }}
+          className="absolute left-3 md:left-5 top-3 bottom-3 w-px bg-gradient-to-b from-[var(--neon-cyan)] via-[var(--neon-violet)] to-[var(--neon-magenta)]"
+        />
         <div className="space-y-16">
-          {roles.map((r) => (
-            <div key={r.role + r.period} className="exp-item relative">
+          {roles.map((r, i) => (
+            <motion.div
+              key={r.role + r.period}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.7, delay: i * 0.12 }}
+              className="relative"
+            >
               <div className="absolute -left-[30px] md:-left-[46px] top-2 w-3 h-3 rounded-full bg-background border border-[var(--neon-cyan)] glow-cyan">
                 <div className="absolute inset-0.5 rounded-full bg-aurora" />
               </div>
@@ -77,7 +66,7 @@ export function Experience() {
                     {r.role}{" "}
                     <span className="text-muted-foreground font-light">— {r.company}</span>
                   </h3>
-                  <p className="mt-2 text-muted-foreground leading-relaxed">{r.desc}</p>
+                  <p className="mt-2 text-muted-foreground leading-relaxed text-sm md:text-base">{r.desc}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {r.stack.map((s) => (
                       <span key={s} className="text-[11px] font-mono px-2.5 py-1 rounded-full border border-border bg-background/40 text-muted-foreground">
@@ -87,7 +76,7 @@ export function Experience() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
