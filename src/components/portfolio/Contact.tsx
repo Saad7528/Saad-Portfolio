@@ -43,23 +43,23 @@ export function Contact() {
           transition={{ duration: 0.7 }}
           className="lg:col-span-5 space-y-8"
         >
-          <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
+          <div className="p-6 rounded-3xl border border-border bg-card/90">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Email</div>
             <a href="mailto:Saad0174742@gmail.com" className="text-base md:text-lg hover:text-gradient-aurora break-all">
               Saad0174742@gmail.com
             </a>
           </div>
-          <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
+          <div className="p-6 rounded-3xl border border-border bg-card/90">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Phone</div>
             <a href="tel:+8801851192657" className="text-base md:text-lg hover:text-gradient-aurora">
               +8801851192657
             </a>
           </div>
-          <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
+          <div className="p-6 rounded-3xl border border-border bg-card/90">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-2">Location</div>
             <div className="text-base md:text-lg">Thakurgaon, Bangladesh</div>
           </div>
-          <div className="p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-md">
+          <div className="p-6 rounded-3xl border border-border bg-card/90">
             <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[var(--neon-cyan)] mb-3">Elsewhere</div>
             <div className="flex flex-wrap gap-4">
               {[

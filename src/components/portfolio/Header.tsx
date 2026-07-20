@@ -37,7 +37,7 @@ export function Header() {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "backdrop-blur-xl bg-background/60 border-b border-border"
+          ? "bg-background/90 border-b border-border"
           : "bg-transparent"
       }`}
     >
@@ -55,7 +55,7 @@ export function Header() {
           </span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-1 p-1 rounded-full border border-border bg-card/40 backdrop-blur-xl">
+        <ul className="hidden md:flex items-center gap-1 p-1 rounded-full border border-border bg-card/90">
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -90,7 +90,7 @@ export function Header() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+        <div className="md:hidden border-t border-border bg-background/98">
           <ul className="px-6 py-4 space-y-3">
             {links.map((l) => (
               <li key={l.href}>

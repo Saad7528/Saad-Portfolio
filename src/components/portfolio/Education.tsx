@@ -31,7 +31,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: i * 0.1 }}
-            className="group relative p-8 rounded-3xl border border-border bg-card/40 backdrop-blur-md overflow-hidden"
+            className="group relative p-8 rounded-3xl border border-border bg-card/90 overflow-hidden"
           >
             <div className="absolute -top-20 -right-20 w-56 h-56 rounded-full bg-[var(--neon-cyan)]/10 blur-3xl group-hover:bg-[var(--neon-magenta)]/15 transition-colors" />
             <div className="relative">

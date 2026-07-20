@@ -35,7 +35,7 @@ export function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: gi * 0.1 }}
-            className="group relative p-7 rounded-3xl border border-border bg-card/40 backdrop-blur-md overflow-hidden"
+            className="group relative p-7 rounded-3xl border border-border bg-card/90 overflow-hidden"
           >
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-br from-[var(--neon-cyan)]/5 via-transparent to-[var(--neon-magenta)]/5 pointer-events-none" />
             <div className="flex items-center justify-between mb-6">

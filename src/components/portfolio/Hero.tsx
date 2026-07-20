@@ -36,7 +36,7 @@ export function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur-md px-3 py-1.5 mb-6 md:mb-8"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/90 px-3 py-1.5 mb-6 md:mb-8"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--neon-cyan)] opacity-60 animate-ping" />
@@ -109,7 +109,7 @@ export function Hero() {
                 const target = document.querySelector("#contact");
                 if (target) target.scrollIntoView({ behavior: "smooth" });
               }}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur-md px-6 py-3 text-sm font-medium hover:border-foreground/30 transition-colors"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card/90 px-6 py-3 text-sm font-medium hover:border-foreground/30 transition-colors"
             >
               Get in touch
             </a>

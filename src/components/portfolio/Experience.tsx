@@ -61,7 +61,7 @@ export function Experience() {
                     {r.period}
                   </div>
                 </div>
-                <div className="md:col-span-9 p-6 md:p-7 rounded-2xl border border-border bg-card/40 backdrop-blur-md hover:border-[var(--neon-cyan)]/40 transition-colors">
+                <div className="md:col-span-9 p-6 md:p-7 rounded-2xl border border-border bg-card/90 hover:border-[var(--neon-cyan)]/40 transition-colors">
                   <h3 className="text-xl md:text-2xl font-semibold tracking-tight">
                     {r.role}{" "}
                     <span className="text-muted-foreground font-light">— {r.company}</span>

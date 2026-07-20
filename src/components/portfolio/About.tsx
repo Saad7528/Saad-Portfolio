@@ -49,7 +49,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.6 }}
-              className="group relative p-5 rounded-2xl border border-border bg-card/40 backdrop-blur-md hover:border-[var(--neon-cyan)]/40 transition-colors overflow-hidden"
+              className="group relative p-5 rounded-2xl border border-border bg-card/90 hover:border-[var(--neon-cyan)]/40 transition-colors overflow-hidden"
             >
               <div className="absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-br from-[var(--neon-cyan)]/10 to-[var(--neon-magenta)]/10 pointer-events-none" />
               <div className="text-xs font-mono uppercase tracking-widest text-[var(--neon-cyan)]">{t.k}</div>
