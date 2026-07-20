@@ -87,10 +87,9 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="lg:col-span-7 p-8 md:p-10 rounded-3xl border border-border bg-card/40 backdrop-blur-md space-y-6 relative overflow-hidden"
+          className="lg:col-span-7 p-8 md:p-10 rounded-3xl border border-border bg-card/90 space-y-6 relative overflow-hidden"
           noValidate
         >
-          <div className="absolute -top-32 -right-32 w-72 h-72 rounded-full bg-[var(--neon-magenta)]/10 blur-3xl pointer-events-none" />
           <div className="relative grid sm:grid-cols-2 gap-6">
             <Field label="Name" value={form.name} onChange={(v) => setForm({ ...form, name: v })} maxLength={100} />
             <Field label="Email" type="email" value={form.email} onChange={(v) => setForm({ ...form, email: v })} maxLength={255} />
