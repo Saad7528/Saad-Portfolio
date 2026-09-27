@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import logoImg from "@/assets/logo.png";
 
 const links = [
   { href: "#about", label: "About" },
@@ -43,18 +44,13 @@ export function Header() {
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#hero" onClick={(e) => go(e, "#hero")} className="group flex items-center gap-2.5">
-          <div className="relative w-8 h-8 flex items-center justify-center">
-            <div className="absolute inset-0 rounded-xl bg-aurora blur-md opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" />
-            <div className="relative w-full h-full rounded-xl bg-gradient-to-tr from-[var(--neon-cyan)] via-[var(--neon-purple)] to-[var(--neon-magenta)] p-[1.5px] transition-transform duration-500 group-hover:rotate-6">
-              <div className="w-full h-full rounded-[10px] bg-background/95 backdrop-blur-sm flex items-center justify-center">
-                <span className="text-[12px] font-black tracking-tighter bg-gradient-to-r from-[var(--neon-cyan)] via-[var(--neon-purple)] to-[var(--neon-magenta)] bg-clip-text text-transparent select-none font-mono">
-                  S<span className="text-[var(--neon-magenta)]">A</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <span className="text-[15px] font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors flex items-center">
-            Saad<span className="text-gradient-aurora font-medium ml-0.5">.dev</span>
+          <img
+            src={logoImg}
+            alt="Saad.dev Logo"
+            className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+          />
+          <span className="text-[16px] font-bold tracking-tight text-foreground group-hover:text-white transition-colors flex items-center">
+            Saad<span className="text-gradient-aurora font-semibold ml-0.5">.dev</span>
           </span>
         </a>
 
